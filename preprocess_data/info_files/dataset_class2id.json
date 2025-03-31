@@ -1,0 +1,413 @@
+{
+    "CT_Abdomen1K": {
+        "Liver": "1",
+        "Right kidney": "2",
+        "Spleen": "3",
+        "Pancreas": "4",
+        "Left kidney": "5"
+    },
+    "CT_AdrenalTumor": {
+        "Adrenocortical carcinoma": "1"
+    },
+    "CT_AMOS": {
+        "Spleen": "1",
+        "Right kidney": "2",
+        "Left kidney": "3",
+        "Gallbladder": "4",
+        "Esophagus": "5",
+        "Liver": "6",
+        "Stomach": "7",
+        "Aorta": "8",
+        "Inferior vena cava": "9",
+        "Pancreas": "10",
+        "Right adrenal gland": "11",
+        "Left adrenal gland": "12",
+        "Duodenum": "13",
+        "Bladder": "14",
+        "Prostate_uterus": "15"
+    },
+    "CT_Aorta": {
+        "Aortic vessel trees": "1"
+    },
+    "CT_ColonTumor": {
+        "Colon cancer primaries": "1"
+    },
+    "CT_COVID19-Infection": {
+        "COVID-19 infection": "1"
+    },
+    "CT_HaN-Seg": {
+        "Arytenoids delineation": "1",
+        "Brainstem": "2",
+        "Left carotid artery": "3",
+        "Right carotid artery": "4",
+        "Cervical esophagus": "5",
+        "Left cochlea": "6",
+        "Right cochlea": "7",
+        "Cricopharyngeal inlet": "8",
+        "Left lacrimal gland": "9",
+        "Larynx-glottis": "10",
+        "Larynx-supraglottic": "12",
+        "Lips": "13",
+        "Mandible": "14",
+        "Optic chiasm": "15",
+        "Left optic nerve": "16",
+        "Right optic nerve": "17",
+        "Oral cavity delineation": "18",
+        "Left parotid gland": "19",
+        "Right parotid gland": "20",
+        "Pituitary gland": "21",
+        "Spinal cord": "22",
+        "Left submandibular gland": "23",
+        "Right submandibular gland": "24",
+        "Thyroid": "25",
+        "Buccal mucosa": "26",
+        "Left anterior segment of the eyeball": "27",
+        "Right anterior segment of the eyeball": "28",
+        "Left posterior segment of the eyeball": "29",
+        "Right posterior segment of the eyeball": "30"
+    },
+    "CT_KidneyTumor": {
+        "Kidney lesions": "1"
+    },
+    "CT_LiverTumor": {
+        "Liver tumors": "1"
+    },
+    "CT_LungLesion": {
+        "Lung lesions": "1"
+    },
+    "CT_Lungs": {
+        "Left lung": "1",
+        "Right lung": "2"
+    },
+    "CT_LymphNode": {
+        "Lymph node": "1"
+    },
+    "CT_PancreasTumor": {
+        "Pancreas tumors": "1"
+    },
+    "CT_SegRap_HeadNeckTumor": {
+        "Head-neck cancer": "1"
+    },
+    "CT_ThoracicOrgans-TCIA-LCTSC": {
+        "Esophagus": "1",
+        "Heart": "2",
+        "Left lung": "3",
+        "Right lung": "4",
+        "Spinal cord": "5"
+    },
+    "CT_TotalSeg-vertebrae": {
+        "Sacrum": "1",
+        "Vertebrae S1": "2",
+        "Vertebrae L5": "3",
+        "Vertebrae L4": "4",
+        "Vertebrae L3": "5",
+        "Vertebrae L2": "6",
+        "Vertebrae L1": "7",
+        "Vertebrae T12": "8",
+        "Vertebrae T11": "9",
+        "Vertebrae T10": "10",
+        "Vertebrae T9": "11",
+        "Vertebrae T8": "12",
+        "Vertebrae T7": "13",
+        "Vertebrae T6": "14",
+        "Vertebrae T5": "15",
+        "Vertebrae T4": "16",
+        "Vertebrae T3": "17",
+        "Vertebrae T2": "18",
+        "Vertebrae T1": "19",
+        "Vertebrae C7": "20",
+        "Vertebrae C6": "21",
+        "Vertebrae C5": "22",
+        "Vertebrae C4": "23",
+        "Vertebrae C3": "24",
+        "Vertebrae C2": "25",
+        "Vertebrae C1": "26"
+    },
+    "CT_TotalSeg_organs": {
+        "Spleen": "1",
+        "Right kidney": "2",
+        "Left kidney": "3",
+        "Gallbladder": "4",
+        "Liver": "5",
+        "Stomach": "6",
+        "Pancreas": "7",
+        "Right adrenal gland": "8",
+        "Left adrenal gland": "9",
+        "Lung upper lobe left": "10",
+        "Lung lower lobe left": "11",
+        "Lung upper lobe right": "12",
+        "Lung middle lobe right": "13",
+        "Lung lower lobe right": "14",
+        "Esophagus": "15",
+        "Trachea": "16",
+        "Thyroid gland": "17",
+        "Small bowel": "18",
+        "Duodenum": "19",
+        "Colon": "20",
+        "Urinary_bladder": "21",
+        "Prostate": "22",
+        "Left kidney cyst": "23",
+        "Right kidney cyst": "24"
+    },
+    "CT_TotalSeg_muscles": {
+        "Left humerus": "1",
+        "Right humerus": "2",
+        "Left scapula": "3",
+        "Right scapula": "4",
+        "Left clavicula": "5",
+        "Right clavicula": "6",
+        "Left femur": "7",
+        "Right femur": "8",
+        "Left hip": "9",
+        "Right hip": "10",
+        "Spinal cord": "11",
+        "Left gluteus maximus": "12",
+        "Right gluteus maximus": "13",
+        "Left gluteus medius": "14",
+        "Right gluteus medius": "15",
+        "Left gluteus minimus": "16",
+        "Right gluteus minimus": "17",
+        "Left autochthon": "18",
+        "Right autochthon": "19",
+        "Left iliopsoas": "20",
+        "Right iliopsoas": "21",
+        "Brain": "22",
+        "Skull": "23"
+    },
+    "CT_TotalSeg_cardiac": {
+        "Heart": "1",
+        "Aorta": "2",
+        "Pulmonary vein": "3",
+        "Brachiocephalic trunk": "4",
+        "Right subclavian artery": "5",
+        "Left subclavian artery": "6",
+        "Right common carotid artery": "7",
+        "Left common carotid artery": "8",
+        "Left brachiocephalic vein": "9",
+        "Right brachiocephalic vein": "10",
+        "Left atrial appendage": "11",
+        "Superior vena cava": "12",
+        "Inferior vena cava": "13",
+        "Portal vein and splenic vein": "14",
+        "Left iliac artery": "15",
+        "Right iliac artery": "16",
+        "Left iliac vena": "17",
+        "Right iliac vena": "18"
+    },
+    "CT_AbdomenAtlas": {
+        "Aorta": "1",
+        "Gallbladder": "2",
+        "Left kidney": "3",
+        "Right kidney": "4",
+        "Liver": "5",
+        "Pancreas": "6",
+        "Postcava": "7",
+        "Spleen": "8",
+        "Stomach": "9",
+        "Left adrenal gland": "10",
+        "Right adrenal gland": "11",
+        "Bladder": "12",
+        "Esophagus": "13"
+    },
+    "CT_WholeBodyTumor": {
+        "Lesion": "1"
+    },
+    "CT_AirwayTree": {
+        "Airway Tree": "1"
+    },
+    "MR_AMOS": {
+        "Spleen": "1",
+        "Right kidney": "2",
+        "Left renal structure identified via abdominal magnetic resonance": "3",
+        "Gallbladder": "4",
+        "Esophagus": "5",
+        "Liver": "6",
+        "Stomach": "7",
+        "Aorta": "8",
+        "Inferior vena cava": "9",
+        "Pancreas": "10",
+        "Right adrenal gland": "11",
+        "Left adrenal gland": "12",
+        "Duodenum": "13",
+        "Bladder": "14",
+        "Prostate_uterus": "15"
+    },
+    "MR_CervicalCancer": {
+        "Cervical cancer tumor": "1"
+    },
+    "MR_CHAOS-T1": {
+        "Liver": "1",
+        "Right kidney": "2",
+        "Left kidney": "3",
+        "Spleen": "4"
+    },
+    "MR_CHAOS-T2": {
+        "Liver": "1",
+        "Right kidney": "2",
+        "Left kidney": "3",
+        "Spleen": "4"
+    },
+    "MR_Heart_ACDC": {
+        "Right ventricle cavity": "1",
+        "Myocardium": "2",
+        "Left ventricle cavity": "3"
+    },
+    "MR_HNTS-MRG_HeadTumor": {
+        "GTVp and GTVn tumor": "1"
+    },
+    "MR_ISLES_DWI": {
+        "Stroke lesion": "1"
+    },
+    "MR_ISLES_ADC": {
+        "Stroke lesion": "1"
+    },
+    "MR_LeftAtrium": {
+        "Left atrium": "1"
+    },
+    "MR_PanSegData": {
+        "Pancreas": "1"
+    },
+    "MR_ProstateADC": {
+        "Transition zone": "1"
+    },
+    "MR_ProstateT2": {
+        "Prostate": "1"
+    },
+    "MR_QIN-PROSTATE-Lesion": {
+        "Prostate lesion": "1"
+    },
+    "MR_TotalSeg": {
+        "Spleen": "1",
+        "Right kidney": "2",
+        "Left kidney": "3",
+        "Gallbladder": "4",
+        "Liver": "5",
+        "Stomach": "6",
+        "Pancreas": "7",
+        "Right adrenal gland": "8",
+        "Left adrenal gland": "9",
+        "Left lung": "10",
+        "Right lung": "11",
+        "Esophagus": "12",
+        "Small bowel": "13",
+        "Duodenum": "14",
+        "Colon": "15",
+        "Urinary bladder": "16",
+        "Prostate": "17",
+        "Sacrum": "18",
+        "Vertebrae": "19",
+        "Intervertebral discs": "20",
+        "Spinal cord": "21",
+        "Heart": "22",
+        "Aorta": "23",
+        "Inferior vena cava": "24",
+        "Portal vein and splenic vein": "25",
+        "Left iliac artery": "26",
+        "Right iliac artery": "27",
+        "Left iliac vena": "28",
+        "Right iliac vena": "29",
+        "Left humerus": "30",
+        "Right humerus": "31",
+        "Left scapula": "32",
+        "Right scapula": "33",
+        "Left clavicula": "34",
+        "Right clavicula": "35",
+        "Left femur": "36",
+        "Right femur": "37",
+        "Left hip": "38",
+        "Right hip": "39",
+        "Left gluteus maximus": "40",
+        "Right gluteus maximus": "41",
+        "Left gluteus medius": "42",
+        "Right gluteus medius": "43",
+        "Left gluteus minimus": "44",
+        "Right gluteus minimus": "45",
+        "Left autochthon": "46",
+        "Right autochthon": "47",
+        "Left iliopsoas": "48",
+        "Right iliopsoas": "49",
+        "Brain": "50"
+    },
+    "MR_WMH_FLAIR": {
+        "White matter hyperintensities": "1"
+    },
+    "MR_WMH_T1": {
+        "White matter hyperintensities": "1"
+    },
+    "MR_Spider_Vertebrae": {
+        "Vertebrae": "1"
+    },
+    "MR_Spider_IVD": {
+        "Intervertebral discs": "1"
+    },
+    "MR_Spider_Spine": {
+        "Spinal canal": "1"
+    },
+    "MR_T1c_crossMoDA_Tumor_Cochlea": {
+        "Intra-meatal region of vestibular schwannoma": "1",
+        "Extra-meatal region of vestibular schwannoma": "2",
+        "Right cochlea": "4",
+        "Left cochlea": "5"
+    },
+    "MR_BraTS-T1n": {
+        "Non-enhancing tumor core": "1",
+        "Surrounding non-enhancing FLAIR hyperintensit": "2",
+        "Enhancing tissue": "3",
+        "Resection cavity": "4"
+    },
+    "MR_BraTS-T1c": {
+        "Non-enhancing tumor core": "1",
+        "Surrounding non-enhancing FLAIR hyperintensit": "2",
+        "Enhancing tissue": "3",
+        "Resection cavity": "4"
+    },
+    "MR_BraTS-T2f": {
+        "Non-enhancing tumor core": "1",
+        "Surrounding non-enhancing FLAIR hyperintensit": "2",
+        "Enhancing tissue": "3",
+        "Resection cavity": "4"
+    },
+    "MR_BraTS-T2w": {
+        "Non-enhancing tumor core": "1",
+        "Surrounding non-enhancing FLAIR hyperintensity": "2",
+        "Enhancing tissue": "3",
+        "Resection cavity": "4"
+    },
+    "US_Low-limb-Leg": {
+        "Soleus": "1",
+        "Gastrocnemius Medialis": "2",
+        "Gastrocnemius Lateralis": "3"
+    },
+    "US_Cardiac": {
+        "Left Ventricle": "1",
+        "Myocardium": "2",
+        "Left atrium": "3"
+    },
+    "PET_autoPET": {
+        "Lesion": "1"
+    },
+    "Microscopy_urocell_Endolysosomes": {
+        "Endolysosomes": "1"
+    },
+    "Microscopy_urocell_Mitochondria": {
+        "Mitochondria": "1"
+    },
+    "Microscopy_cremi": {
+        "Synaptic clefts": "1"
+    },
+    "Microscopy_nnucmm": {
+        "Nuclei": "1"
+    },
+    "Microscopy_SELMA3D_neural_activity_marker": {
+        "Neural activity": "1"
+    },
+    "Microscopy_SELMA3D_ADplaques": {
+        "Alzheimer's disease plaque": "1"
+    },
+    "Microscopy_SELMA3D_nuceus": {
+        "Nucleus": "1"
+    },
+    "Microscopy_SELMA3D_vessel": {
+        "Vessel": "1"
+    }
+}
