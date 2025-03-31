@@ -44,15 +44,9 @@ The entire training process takes approximately 3 days using 8×A100 GPUs.
   ```shell
   bash scripts/train.sh
   ```
-  We provide two model weights, hoping that the weights trained with full data would support organ and tumor segmentation tasks in other scenarios. 
-  Set the parameter `pretrain_weights` and run:
 - **Evaluation**
   ```shell
   bash scripts/test.sh
-  ```
-- **Inference**
-  ```shell
-  bash scripts/inference.sh
   ```
 
 ## Citation
