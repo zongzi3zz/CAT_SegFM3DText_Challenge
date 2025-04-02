@@ -23,8 +23,8 @@
 - It is recommended to build a Python-3.9 virtual environment using conda
 
   ```bash
-  [git clone https://github.com/zongzi3zz/CAT.git](https://github.com/zongzi3zz/CAT_SegFM3DText_Challenge.git)
-  cd CAT
+  git clone https://github.com/zongzi3zz/CAT_SegFM3DText_Challenge.git
+  cd CAT_SegFM3DText_Challenge
   conda env create -f environment.yml
 
 ### Dataset Preparation
