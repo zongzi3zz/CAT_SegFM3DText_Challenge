@@ -23,9 +23,9 @@
 - It is recommended to build a Python-3.9 virtual environment using conda
 
   ```bash
-  git clone https://github.com/zongzi3zz/CAT.git
+  [git clone https://github.com/zongzi3zz/CAT.git](https://github.com/zongzi3zz/CAT_SegFM3DText_Challenge.git)
   cd CAT
-  conda env create -f env.yml
+  conda env create -f environment.yml
 
 ### Dataset Preparation
 - Please download dataset from [the competition website](https://www.codabench.org/competitions/5651/) and use `preprocess_data/npz2nii.py` to convert npz files into organized nii files and transform valid labels with `preprocess_data/trans_mask.py`
