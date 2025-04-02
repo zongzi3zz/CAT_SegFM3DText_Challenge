@@ -48,6 +48,10 @@ The entire training process takes approximately 3 days using 8×A100 GPUs.
   ```shell
   bash scripts/test.sh
   ```
+- **Evaluation**
+  ```shell
+  python inference.py --single_infer_path npz_path
+  ```
 
 ## Citation
 If you find CAT useful, please cite using this BibTeX:
