@@ -10,8 +10,6 @@ from monai.data.meta_tensor import MetaTensor
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from sklearn.ensemble import IsolationForest
-#from pyod.models.knn import KNN
 from math import ceil
 from scipy.ndimage.filters import gaussian_filter
 import warnings
