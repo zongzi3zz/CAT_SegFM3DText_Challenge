@@ -53,6 +53,9 @@ The entire training process takes approximately 3 days using 8×A100 GPUs.
   python inference.py --single_infer_path npz_path
   ```
 
+### Docker Image
+The docker image can be found in [GoogleDrive]([https://pan.baidu.com/s/1N_f58HGNRVWAM7vccZ6rLg](https://drive.google.com/file/d/1I85ez4vEkRj0yz79g2J5CbI1aEcy9WdZ/view?usp=sharing)).
+
 ## Citation
 If you find CAT useful, please cite using this BibTeX:
 ```bibtex
