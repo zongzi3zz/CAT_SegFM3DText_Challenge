@@ -22,6 +22,11 @@ def get_pred_transforms(args):
             ToMetaTensord(keys=["image"]),
             EnsureChannelFirstd(keys=["image"]),
             Orientationd(keys=["image"], axcodes="RAS"),
+            Spacingd(
+                keys=["image"],
+                pixdim=(args.space_x, args.space_y, args.space_z),
+                mode=("bilinear"),
+            ),
             ScaleIntensityRanged(
                 keys=["image"],
                 a_min=args.a_min,
