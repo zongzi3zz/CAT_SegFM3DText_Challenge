@@ -47,6 +47,10 @@ def get_args():
     parser.add_argument('--anatomical_prompt_paths', default='prompts/vprompts.json', help='visual_prompt_path')
     parser.add_argument('--textual_prompt_paths', default='prompts/vprompts.json', help='text_prompt_path')
 
+    parser.add_argument('--space_x', default=1.5, type=float, help='spacing in x direction')
+    parser.add_argument('--space_y', default=1.5, type=float, help='spacing in y direction')
+    parser.add_argument('--space_z', default=1.5, type=float, help='spacing in z direction')
+
     parser.add_argument('--batch_size', default=1, type=int, help='batch size')
     parser.add_argument('--num_workers', default=8, type=int, help='num workers for DataLoader')
     parser.add_argument('--a_min', default=0, type=float, help='a_min in ScaleIntensityRanged')
