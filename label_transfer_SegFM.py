@@ -125,7 +125,7 @@ def worker(sub_data_dicts):
             Orientationd(keys=["label", "label_raw"], axcodes="RAS"),
             Spacingd(
                 keys=["label", "label_raw"],
-                pixdim=(1.5, 1.5),
+                pixdim=(1.5, 1.5, 1.5),
                 mode=("nearest", "nearest"),
                 align_corners=True
             ),
