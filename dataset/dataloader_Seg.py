@@ -336,7 +336,7 @@ def get_loader(args):
 
             # 然后用同一个 cache_dir，直接读缓存文件
             train_dataset = PersistentDataset(
-                data=data_dicts_train,
+                data=data_part,
                 transform=train_transforms,
                 cache_dir=cache_dir,
             )
