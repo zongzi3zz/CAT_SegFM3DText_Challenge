@@ -14,6 +14,7 @@
 <br />
 
 ## 🎉 News
+- **\[2025/05\]** Updating the repository for training on the full set of data in [Competition](https://www.codabench.org/competitions/5651/).
 - **\[2024/09\]** CAT is accepted to NeurIPS 2024!
 
 ## 🛠️ Quick Start
