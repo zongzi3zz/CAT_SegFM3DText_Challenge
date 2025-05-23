@@ -10,6 +10,7 @@ from monai.data.meta_tensor import MetaTensor
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+#from pyod.models.knn import KNN
 from math import ceil
 from scipy.ndimage.filters import gaussian_filter
 import warnings
@@ -31,7 +32,7 @@ from monai.utils import (
 from monai.data import decollate_batch
 from monai.transforms import Invertd, SaveImaged
 import json
-NUM_CLASS = 170
+NUM_CLASS = 192
 
 
 
@@ -76,7 +77,6 @@ def keep_topk_largest_connected_object(npy_mask, k, area_least, out_mask, out_la
     for label, extracted in cc3d.each(labels_out, binary=True, in_place=True):
         areas[label] = fastremap.foreground(extracted)
     candidates = sorted(areas.items(), key=lambda item: item[1], reverse=True)
-
     for i in range(min(k, len(candidates))):
         if candidates[i][1] > area_least:
             out_mask[labels_out == int(candidates[i][0])] = out_label
