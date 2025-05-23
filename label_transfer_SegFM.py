@@ -91,23 +91,18 @@ def generate_label(input_lbl, num_classes, name, TEMPLATE, raw_lbl):
         A tensor of shape [bs, num_classes, *]
     Comment: spleen to 0
     """
-    shape = np.array(input_lbl.shape)
-    shape[1] = num_classes
-    shape = tuple(shape)
-    result = torch.zeros(shape)
-    input_lbl = input_lbl.long()
+    B, _, D, H, W = input_lbl.shape
+    input_lbl = input_lbl.squeeze(1).long()  # [B, D, H, W]
 
-    B = result.shape[0]
+    output = torch.full((B, num_classes, D, H, W), -1, dtype=torch.float32)
+
     for b in range(B):
-        template_key = name[b].split('_')[0]
-        organ_list = TEMPLATE[template_key]
-        # -1 for organ not labeled
-        for i in range(num_classes):
-            if (i + 1) not in organ_list:
-                result[b, i] = -1
-            else:
-                result[b, i] = (input_lbl[b][0] == (i + 1))
-    return result
+        key = name[b].split('_')[0]
+        valid_labels = TEMPLATE[key]
+        for label in valid_labels:
+            output[b, label - 1] = (input_lbl[b] == label).float()
+
+    return output
 
 
 # --------------------------
