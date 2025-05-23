@@ -24,7 +24,7 @@
         "Left adrenal gland": "12",
         "Duodenum": "13",
         "Bladder": "14",
-        "Prostate_uterus": "15"
+        "Prostate/uterus": "15"
     },
     "CT_Aorta": {
         "Aortic vessel trees": "1"
@@ -36,37 +36,37 @@
         "COVID-19 infection": "1"
     },
     "CT_HaN-Seg": {
-        "Arytenoids delineation": "1",
-        "Brainstem": "2",
-        "Left carotid artery": "3",
-        "Right carotid artery": "4",
-        "Cervical esophagus": "5",
-        "Left cochlea": "6",
-        "Right cochlea": "7",
-        "Cricopharyngeal inlet": "8",
-        "Left lacrimal gland": "9",
-        "Larynx-glottis": "10",
-        "Larynx-supraglottic": "12",
-        "Lips": "13",
-        "Mandible": "14",
-        "Optic chiasm": "15",
-        "Left optic nerve": "16",
-        "Right optic nerve": "17",
-        "Oral cavity delineation": "18",
-        "Left parotid gland": "19",
-        "Right parotid gland": "20",
-        "Pituitary gland": "21",
-        "Spinal cord": "22",
-        "Left submandibular gland": "23",
-        "Right submandibular gland": "24",
-        "Thyroid": "25",
-        "Buccal mucosa": "26",
-        "Left anterior segment of the eyeball": "27",
-        "Right anterior segment of the eyeball": "28",
-        "Left posterior segment of the eyeball": "29",
-        "Right posterior segment of the eyeball": "30"
+        "Left carotid artery": "1",
+        "Cricopharyngeal inlet": "10",
+        "Cervical esophagus": "11",
+        "Left anterior segment of the eyeball": "12",
+        "Right anterior segment of the eyeball": "13",
+        "Left posterior segment of the eyeball": "14",
+        "Right posterior segment of the eyeball": "15",
+        "Left lacrimal gland": "16",
+        "Right lacrimal gland": "17",
+        "Left submandibular gland": "18",
+        "Right submandibular gland": "19",
+        "Right carotid artery": "2",
+        "Thyroid": "20",
+        "Larynx-glottis": "21",
+        "Larynx-supraglottic": "22",
+        "Lips": "23",
+        "Optic chiasm": "24",
+        "Left optic nerve": "25",
+        "Right optic nerve": "26",
+        "Left parotid gland": "27",
+        "Right parotid gland": "28",
+        "Pituitary gland": "29",
+        "Arytenoids delineation": "3",
+        "Spinal cord": "30",
+        "Brainstem": "5",
+        "Buccal mucosa": "6",
+        "Oral cavity delineation": "7",
+        "Left cochlea": "8",
+        "Right cochlea": "9"
     },
-    "CT_KidneyTumor": {
+    "CT_KidneyLesion": {
         "Kidney lesions": "1"
     },
     "CT_LiverTumor": {
@@ -161,7 +161,7 @@
         "Left hip": "9",
         "Right hip": "10",
         "Spinal cord": "11",
-        "Left gluteus maximus": "12",
+        "Left gluteus Maximus": "12",
         "Right gluteus maximus": "13",
         "Left gluteus medius": "14",
         "Right gluteus medius": "15",
@@ -213,7 +213,13 @@
         "Lesion": "1"
     },
     "CT_AirwayTree": {
-        "Airway Tree": "1"
+        "Airway Tree": "2"
+    },
+    "CT_TopCoW24": {
+        "Circle of Willis": "1"
+    },
+    "CT_Aeropath": {
+        "Airways": "1"
     },
     "MR_AMOS": {
         "Spleen": "1",
@@ -230,7 +236,7 @@
         "Left adrenal gland": "12",
         "Duodenum": "13",
         "Bladder": "14",
-        "Prostate_uterus": "15"
+        "Prostate/uterus": "15"
     },
     "MR_CervicalCancer": {
         "Cervical cancer tumor": "1"
@@ -263,9 +269,6 @@
     },
     "MR_LeftAtrium": {
         "Left atrium": "1"
-    },
-    "MR_PanSegData": {
-        "Pancreas": "1"
     },
     "MR_ProstateADC": {
         "Transition zone": "1"
@@ -308,25 +311,21 @@
         "Right iliac vena": "29",
         "Left humerus": "30",
         "Right humerus": "31",
-        "Left scapula": "32",
-        "Right scapula": "33",
-        "Left clavicula": "34",
-        "Right clavicula": "35",
-        "Left femur": "36",
-        "Right femur": "37",
-        "Left hip": "38",
-        "Right hip": "39",
-        "Left gluteus maximus": "40",
-        "Right gluteus maximus": "41",
-        "Left gluteus medius": "42",
-        "Right gluteus medius": "43",
-        "Left gluteus minimus": "44",
-        "Right gluteus minimus": "45",
-        "Left autochthon": "46",
-        "Right autochthon": "47",
-        "Left iliopsoas": "48",
-        "Right iliopsoas": "49",
-        "Brain": "50"
+        "Left femur": "34",
+        "Right femur": "35",
+        "Left hip": "36",
+        "Right hip": "37",
+        "Left gluteus maximus": "38",
+        "Right gluteus maximus": "39",
+        "Left gluteus medius": "40",
+        "Right gluteus medius": "41",
+        "Left gluteus minimus": "42",
+        "Right gluteus minimus": "43",
+        "Left autochthon": "44",
+        "Right autochthon": "45",
+        "Left iliopsoas": "46",
+        "Right iliopsoas": "47",
+        "Brain": "56"
     },
     "MR_WMH_FLAIR": {
         "White matter hyperintensities": "1"
@@ -373,6 +372,41 @@
         "Enhancing tissue": "3",
         "Resection cavity": "4"
     },
+    "MR_TopCoW24": {
+        "Circle of Willis": "1"
+    },
+    "MR_SegThy": {
+        "Thyroid": "1",
+        "Left carotid artery": "2",
+        "Left jugular vein": "3",
+        "Right carotid artery": "4",
+        "Right jugular vein": "5"
+    },
+    "MR_HVSMR": {
+        "Left Ventricle": "1",
+        "Right Ventricle": "2",
+        "Left Atrium": "3",
+        "Right Atrium": "4",
+        "Aorta": "5",
+        "Pulmonary Artery": "6",
+        "Superior vena cava": "7",
+        "Inferior vena cava": "8"
+    },
+    "MR_IBD": {
+        "Stomach": "1",
+        "Duodenum": "2",
+        "Small Intestine": "3",
+        "Appendix": "4",
+        "Cecum": "5",
+        "Ascending colon": "6",
+        "Transverse colon": "7",
+        "Descending colon": "8",
+        "Sigmoid colon": "9",
+        "Rectum": "10"
+    },
+    "MR_RESECT": {
+        "Brain tumor": "1"
+    },
     "US_Low-limb-Leg": {
         "Soleus": "1",
         "Gastrocnemius Medialis": "2",
@@ -381,9 +415,17 @@
     "US_Cardiac": {
         "Left Ventricle": "1",
         "Myocardium": "2",
-        "Left atrium": "3"
+        "Left Atrium": "3"
     },
-    "PET_autoPET": {
+    "US_SegThy": {
+        "Thyroid": "1",
+        "Carotid artery": "2",
+        "Jugular vein": "3"
+    },
+    "US_RESECT": {
+        "Brain tumor": "1"
+    },
+    "autoPET": {
         "Lesion": "1"
     },
     "Microscopy_urocell_Endolysosomes": {
@@ -409,5 +451,14 @@
     },
     "Microscopy_SELMA3D_vessel": {
         "Vessel": "1"
+    },
+    "Microscopy_MUCIC-HL60": {
+        "Cell nuclei": "1"
+    },
+    "Microscopy_AxonEM": {
+        "Axon": "1"
+    },
+    "Microscopy_NIS3D": {
+        "Nuclei": "1"
     }
 }
