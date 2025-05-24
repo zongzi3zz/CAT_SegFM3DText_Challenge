@@ -36,7 +36,7 @@
 3. The example of data configure for training and evaluation can be seen in [datalist](https://github.com/zongzi3zz/CAT/tree/main/datalist)
 4. The process for processing 10% data takes approximately 3 hours.
 ### Prompt Feats
-We provide the prompt feats in [BaiduNetdisk](https://pan.baidu.com/s/1N_f58HGNRVWAM7vccZ6rLg) (code: `3ern`) and [GoogleDrive](https://drive.google.com/drive/folders/11noyz1l6y6sfi4yzSrhwvk60hPmz6qtB?usp=share_link).
+We provide the prompt feats in [BaiduNetdisk](https://pan.baidu.com/s/1QsbV1uGCCXP1_ea6wIc93g) (code: `rp3f`) and [GoogleDrive](https://drive.google.com/drive/folders/11noyz1l6y6sfi4yzSrhwvk60hPmz6qtB?usp=share_link).
 ### Train & Evaluation
 The entire training process takes approximately 3 days using 8×A100 GPUs.
 - **Train Pipeline**: 
