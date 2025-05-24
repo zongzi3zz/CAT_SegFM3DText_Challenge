@@ -36,7 +36,7 @@
 3. The example of data configure for training and evaluation can be seen in [datalist](https://github.com/zongzi3zz/CAT/tree/main/datalist)
 4. The process for processing 10% data takes approximately 3 hours.
 ### Prompt Feats
-We provide the prompt feats in [BaiduNetdisk](https://pan.baidu.com/s/1QsbV1uGCCXP1_ea6wIc93g) (code: `rp3f`) and [GoogleDrive](https://drive.google.com/drive/folders/1YI2AZw16jM6nrXR7zITSDN6MYbrdkJ4G?usp=sharing)
+We provide the prompt feats in [BaiduNetdisk](https://pan.baidu.com/s/1IWLNLnQCWYoLJL04HSq06Q) (code: `kec1`) and [GoogleDrive](https://drive.google.com/drive/folders/1YI2AZw16jM6nrXR7zITSDN6MYbrdkJ4G?usp=sharing)
 ### Train & Evaluation
 The entire training process takes approximately 3 days using 8×A100 GPUs.
 - **Train Pipeline**: 
@@ -52,9 +52,8 @@ The entire training process takes approximately 3 days using 8×A100 GPUs.
   ```shell
   python inference.py --single_infer_path npz_path
   ```
-
 ### Docker Image
-The docker image can be found in [BaiduNetdisk](https://pan.baidu.com/s/1j_W-t5Txh21WxNwGtZKdBw)(code: `sc9d`) and [GoogleDrive](https://drive.google.com/file/d/148EuwV4bIRxja6FbNrcntZm7wR5g_tEn/view?usp=share_link).
+The docker image can be found in [BaiduNetdisk](https://pan.baidu.com/s/1QsbV1uGCCXP1_ea6wIc93g) (code: `rp3f`)  and [GoogleDrive]().
 You can run the doceker with:
 ```shell
 docker container run --gpus "device=0" -m 24G --name cat_segfm3dtext_challenge --rm -v $PWD/inputs/:/workspace/inputs/ -v $PWD/outputs/:/workspace/outputs/ cat_segfm3dtext_challenge:latest /bin/bash -c "sh predict.sh"
