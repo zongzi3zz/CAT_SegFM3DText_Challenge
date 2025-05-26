@@ -53,7 +53,7 @@ The entire training process takes approximately 3 days using 8×A100 GPUs.
   python inference.py --single_infer_path npz_path
   ```
 ### Docker Image
-The docker image can be found in [BaiduNetdisk](https://pan.baidu.com/s/1QsbV1uGCCXP1_ea6wIc93g) (code: `rp3f`)  and [GoogleDrive]().
+The docker image can be found in [BaiduNetdisk](https://pan.baidu.com/s/1QsbV1uGCCXP1_ea6wIc93g) (code: `rp3f`)  and [GoogleDrive](https://drive.google.com/file/d/1ixX9w7db_21q7xyv_VYPlKpfAuO1qaJ8/view?usp=sharing).
 You can run the doceker with:
 ```shell
 docker container run --gpus "device=0" -m 24G --name cat_segfm3dtext_challenge --rm -v $PWD/inputs/:/workspace/inputs/ -v $PWD/outputs/:/workspace/outputs/ cat_segfm3dtext_challenge:latest /bin/bash -c "sh predict.sh"
