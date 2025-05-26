@@ -53,7 +53,7 @@ The entire training process takes approximately 3 days using 8×A100 GPUs.
   ```
 
 ### Docker Image
-The docker image can be found in [BaiduNetdisk](https://pan.baidu.com/s/1j_W-t5Txh21WxNwGtZKdBw)(code: `sc9d`) and [GoogleDrive](https://drive.google.com/file/d/148EuwV4bIRxja6FbNrcntZm7wR5g_tEn/view?usp=share_link).
+The docker image can be found in [BaiduNetdisk](https://pan.baidu.com/s/1j_W-t5Txh21WxNwGtZKdBw)(code: `sc9d`) and [GoogleDrive](https://drive.google.com/file/d/1ixX9w7db_21q7xyv_VYPlKpfAuO1qaJ8/view?usp=sharing).
 You can run the doceker with:
 ```shell
 docker container run --gpus "device=0" -m 24G --name cat_segfm3dtext_challenge --rm -v $PWD/inputs/:/workspace/inputs/ -v $PWD/outputs/:/workspace/outputs/ cat_segfm3dtext_challenge:latest /bin/bash -c "sh predict.sh"
