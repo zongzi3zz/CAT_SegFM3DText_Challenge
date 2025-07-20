@@ -31,8 +31,11 @@ class CAT(nn.Module):
         else:
             raise Exception('{} backbone is not implemented in curretn version'.format(backbone))
         
-        self.ap_emb = torch.load(args.anatomical_prompt_path, map_location='cpu')#json.load(open(args.anatomical_prompts_paths))
-        self.tp_emb = torch.load(args.textual_prompt_path, map_location='cpu')
+        self.ap_emb = torch.load(random.choice(json.load(open(args.anatomical_prompt_paths))), map_location='cpu')#
+        self.tp_emb = torch.load(random.choice(json.load(open(args.textual_prompt_paths))), map_location='cpu')
+        
+        self.text_total = torch.load('infer_weights/infer_text_total.pt', map_location='cpu')
+        
         self.only_last = args.only_last
         if not self.only_last:
             in_dims = [768, 768, 384, 192]
@@ -102,6 +105,8 @@ class CAT(nn.Module):
         tp_emb = self.tp_emb.to(x_in.device)
         batch_tp_emb = tp_emb.unsqueeze(0).repeat(B, 1, 1).to(x_in.device)
         
+        text_total = [each.to(x_in.device) for each in self.text_total]
+        
         for i in range(len(self.attend_layers)):
             seg_query = self.attend_layers[i](feats[i], seg_query=seg_query, anatomical_prompts=None, is_ap=False, is_seg=True)
             batch_tp_emb = self.attend_layers[i](feats[i], textual_prompts=batch_tp_emb, anatomical_prompts=None, is_ap=False)
@@ -119,10 +124,22 @@ class CAT(nn.Module):
         logits = out.flatten(start_dim=2, end_dim=4).transpose(1, 2) @ weight.transpose(1, 2)
         logits_out = logits.transpose(1, 2).reshape(B, N, D, H, W) 
         
-        proj_s = F.normalize(self.tp_projection(tp_emb), dim=-1)
-        proj_tp = F.normalize(self.tp_projection(text_query), dim=-1)
+        final_logits = []
         
-        sim_s2i = proj_s @ proj_tp.T
-        max_index = torch.argmax(sim_s2i).item()
+        text_query = F.normalize(text_query, dim=-1)
         
-        return logits_out[:,max_index:max_index+1,:]
+        for each_quey in text_query:
+            each_quey = each_quey.unsqueeze(0)
+            scores = []
+            for part_embs in text_total:
+                n_embs = F.normalize(part_embs, dim=-1)
+                sim = each_quey @ n_embs.T
+                score = sim.max()
+                scores.append(score)
+            scores_tensor = torch.tensor(scores)
+            max_index = torch.argmax(scores_tensor).item()
+            
+            final_logits.append(logits_out[:,max_index:max_index+1,:])
+            
+        final_out = torch.cat(final_logits, dim=1)
+        return final_out
